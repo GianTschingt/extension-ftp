@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.lucee</groupId>
     <artifactId>ftp-extension</artifactId>
-    <version>1.0.0.8</version>
+    <version>1.0.0.9-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>FTP</name>
 
@@ -120,6 +120,8 @@
                 <version>1.6.0</version>
                 <configuration>
                     <flattenMode>bom</flattenMode>
+                    <!-- flattened pom is uploaded to S3 next to the .lex files (packaging pom is skipped by default) -->
+                    <updatePomFile>true</updatePomFile>
                 </configuration>
                 <executions>
                     <execution>
