@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- [LDEV-1566](https://luceeserver.atlassian.net/browse/LDEV-1566) — `cfftp action="listDir"` accepts `returntype="query|array|struct"` and `columnKey` (struct needs `columnKey` when more than one row is returned)
+
 ## 1.0.0.6-RC
 
 - Fix FTPS test to use `secure="FTPS"` instead of SFTP
